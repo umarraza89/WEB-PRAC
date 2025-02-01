@@ -3,54 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="1form.js"  defer></script>
+    <title>Portfolio - Muhammad Umar Raza</title>
     <style>
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
-        body{
-
-display: flex;
-justify-content:center;
-align-items: center;
-margin:0;
-padding:10px;
-background-color: aqua;
-
+        body {
+            background: #f4f4f4;
+            text-align: center;
         }
-        .form button {
-            background-color: #45a049;
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
         }
-
-        .form{
-            background: #fff;
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .about {
+            background: white;
+            margin: 20px auto;
             padding: 20px;
-            border-radius: 8px;     
-            /* rounds the corners */
+            width: 50%;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 400px;
-
+            border-radius: 5px;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #333;
+            color: white;
         }
     </style>
 </head>
 <body>
     <header>
-        <div><H1 style="background-color:yellow;">FLEX</H1></div>
-        
-        
-        <div class="form">
-            <h2>Login</h2>
-       <form id="login"></form>
-       <label for="user">USERNAME</label>
-<input type="text" id="user" placeholder="enter username here">
-<br>
-<label for="pass">PASSWORD</label>
-<input type="password" id="pass" placeholder="enter password here">
-<br>
-<button id="sbm">Submit!</button>
-        </div>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm <b>Muhammad Umar Raza</b>, a Software Engineering student in my 6th semester. Passionate about coding and development.</p>
+        <p>Connect with me:</p>
+        <ul>
+            <li><a href="https://github.com/umarraza89" target="_blank">GitHub</a></li>
+            <li><a href="mailto:umarkamboh080@gmail.com">Email</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Muhammad Umar Raza</p>
+    </footer>
 </body>
 </html>
