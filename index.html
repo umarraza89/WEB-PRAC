@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Muhammad Umar Raza</title>
+    <title>My Portfolio</title>
     <style>
         * {
             box-sizing: border-box;
@@ -11,66 +11,98 @@
             padding: 0;
             font-family: Arial, sans-serif;
         }
+
         body {
-            background: #f4f4f4;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 0;
             text-align: center;
         }
-        header {
-            background: #333;
-            color: white;
-            padding: 15px;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
+
+        .navbar a {
             color: white;
             text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
         }
-        .about {
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
             background: white;
-            margin: 20px auto;
             padding: 20px;
-            width: 50%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
         }
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background: #333;
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        h2 {
+            color: #2980b9;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #2980b9;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: #2c3e50;
             color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="about">
+    <div class="navbar">
+        <h1>Welcome to My Portfolio</h1>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="container">
         <h2>About Me</h2>
         <p>Hello! I'm <b>Muhammad Umar Raza</b>, a Software Engineering student in my 6th semester. Passionate about coding and development.</p>
         <p>Connect with me:</p>
-        <ul>
-            <li><a href="https://github.com/umarraza89" target="_blank">GitHub</a></li>
-            <li><a href="mailto:umarkamboh080@gmail.com">Email</a></li>
-        </ul>
-    </section>
+        <p><a href="https://github.com/umarraza89" target="_blank">GitHub</a> | <a href="mailto:umarkamboh080@gmail.com">Email</a></p>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Muhammad Umar Raza</p>
-    </footer>
+    <div class="footer">
+        © 2024 Muhammad Umar Raza
+    </div>
+
 </body>
 </html>
